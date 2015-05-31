@@ -49,13 +49,9 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <div>
-                <div class="panel panel-default">
-                        <div id="map1" class="map">
-                        </div>
-                    </div>
-                </div>
+        <div class="col-xs-12">
+            <div class="map_container">
+                <div id="map_canvas" class="map_canvas"></div>
             </div>
         </div>
     </div>
@@ -74,9 +70,9 @@
             };
             var marker = new google.maps.Marker({
                 position: myLocation,
-                title: "Property Location"
+                title: "Apartment Location"
             });
-            var map = new google.maps.Map(document.getElementById("map1"),
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
                 mapOptions);
             marker.setMap(map);
         }
@@ -85,6 +81,20 @@
 </script>
 
 <style>
+    .map_container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+    }
+    .map_container .map_canvas{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
     .map {
         min-width: 300px;
         min-height: 300px;
