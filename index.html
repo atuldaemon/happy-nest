@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Happy Nest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63394370-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Happy Nest <small>Your happy nest in the heart of Pune</small></h1>
+</div>
+
+<!-- Navigation - START -->
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Location.html">Location</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Metro Tiles - START -->
+
+
+<div class="container-fluid dynamicTile">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+        <a href="Gallery.html">
+            <div id="tile7" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/thumbnails/tn_img001.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img003.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img008.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img013.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img017.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img019.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img020.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img024.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="images/thumbnails/tn_img027.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+	  </a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+	  <a href="ContactUs.html">
+            <div id="tile10" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-info bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Contact for inquiry
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-question bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Contact for question
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	  </a>  
+        </div>
+        <div class="col-xs-12 col-sm-4">
+	  <a href="Location.html">
+            <div id="tile6" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-map-marker bigicondark"></span>
+                            </div>
+                            <div class="icontextdark">
+                               Location
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-map-marker bigicondark"></span>
+                            </div>
+                            <div class="icontextdark">
+                                Location
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	  </a>
+        </div>
+    </div>
+</div>
+<style>
+    .dynamicTile .col-sm-2.col-xs-4 {
+        padding: 5px;
+    }
+
+    .bigicon {
+        font-size: 67px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .icontext {
+        color: white;
+        font-size: 27px;
+    }
+
+    .bigicondark {
+        font-size: 67px;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .icontextdark {
+        color: black;
+        font-size: 27px;
+    }
+
+    .dynamicTile .col-sm-4.col-xs-8 {
+        padding: 5px;
+    }
+
+    #tile1 {
+        background: #7C91C7;
+    }
+
+    #tile2 {
+        background: #3B579D;
+    }
+
+    #tile3 {
+        background: #153178;
+    }
+
+    #tile4 {
+        background: #EACF46;
+    }
+
+    #tile5 {
+        background: #EACF46;
+    }
+
+    #tile6 {
+        background: #FFED94;
+    }
+
+    #tile7 {
+        background: white;
+    }
+
+    #tile8 {
+        background: #03133C;
+    }
+
+    #tile9 {
+        background: #EACF46;
+    }
+
+    #tile10 {
+        background: #EACF46;
+    }
+
+    .tilecaption {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        margin: 0!important;
+        text-align: center;
+        color: white;
+        font-family: Segoe UI;
+        font-weight: lighter;
+    }
+</style>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".tile").height($("#tile1").width());
+    $(".carousel").height($("#tile1").width());
+    $(".item").height($("#tile1").width());
+
+    $(window).resize(function () {
+        if (this.resizeTO) clearTimeout(this.resizeTO);
+        this.resizeTO = setTimeout(function () {
+            $(this).trigger('resizeEnd');
+        }, 10);
+    });
+
+    $(window).bind('resizeEnd', function () {
+        $(".tile").height($("#tile1").width());
+        $(".carousel").height($("#tile1").width());
+        $(".item").height($("#tile1").width());
+    });
+
+});
+</script>
+
+
+<!-- Metro Tiles - END -->
+<!-- Navigation - END -->
+
+</div>
+
+</body>
+</html>

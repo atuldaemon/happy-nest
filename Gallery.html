@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Happy Nest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63394370-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Happy Nest <small>Your happy nest in the heart of Pune</small></h1>
+</div>
+
+<!-- Navigation - START -->
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+            <li><a href="Location.html">Location</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Gallery - START -->
+
+<style>
+img {
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+}
+img:hover {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+</style>
+<div class="container-fluid">
+    <div id="links">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img001.jpg" title="Living room">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img001.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img002.jpg" title="Living room">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img002.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img003.jpg" title="Small but completely functional kitchen for cooking and dining of 3/4">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img003.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img004.jpg" title="Kitchen is equipped with Microwave, refridgerator and an induction cook top">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img004.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img005.jpg" title="Stairs from the kitchen lead to the bedroom above">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img005.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img006.jpg" title="A foldable dining table in the kitchen for a quick bite or a leisurely dinner">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img006.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img007.jpg" title="Hallway from the living room to the bedroom on the lower level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img007.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img008.jpg" title="The bedroom on the lower level with a kings size bed">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img008.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img009.jpg" title="Wardrobe and plenty of sunshine and air in the bedroom">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img009.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img010.jpg" title="Bathroom ensuite the bedroom on the lower level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img010.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img011.jpg" title="Toilet ensuite the bedroom on the lower level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img011.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img012.jpg" title="A wash basin ensuite the bedroom on the lower level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img012.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img013.jpg" title="The bedroom on the upper level with a queens size bed">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img013.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img014.jpg" title="Wardrobe in the upper level bedroom">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img014.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img015.jpg" title="Toilet/bath ensuite the bedroom on the upper level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img015.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img016.jpg" title="Windows of the bedroom have a nice view of the greenery outside">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img016.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img017.jpg" title="Closed terrace ensuite the bedroom on the upper level">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img017.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img018.jpg" title="Washing machine to do the laundry">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img018.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img019.jpg" title="View of the hills from the closed terrace">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img019.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img020.jpg" title="The open terrace with beautiful view of the hills">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img020.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img021.jpg" title="The open terrace with beautiful view of the hills">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img021.jpg">
+                    </a>
+                </div>
+            </div>
+            <!--
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img022.jpg" title="two">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img022.jpg">
+                    </a>
+                </div>
+            </div>
+            -->
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img023.jpg" title="A site to watch in the monsoon">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img023.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img024.jpg" title="Sun setting behind the hills">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img024.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img025.jpg" title="Nature colors in full bloom">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img025.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img026.jpg" title="Nature colors in full bloom">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img026.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img027.jpg" title="The entrance to the apartment. You are welcome!">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img027.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <a href="images/img028.jpg" title="East side view from the terrace">
+                        <img class="thumbnail img-responsive" src="images/thumbnails/tn_img028.jpg">
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- Gallery - END -->
+
+</div>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/blueimp-gallery.min.js"></script>
+    <script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+    </script>
+</body>
+</html>

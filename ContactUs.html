@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Happy Nest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/datepicker.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-63394370-1', 'auto');
+            ga('send', 'pageview');
+            
+        </script>
+        <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Happy Nest <small>Your happy nest in the heart of Pune</small></h1>
+            </div>
+            <!-- Navigation - START -->
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Contact Us</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Location.html">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contact Form - START -->
+            <div class="container-fluid">
+                <form name="contactUs" class="well form-horizontal" id="contactForm"  novalidate>
+                    <legend>Contact Us</legend>
+                    <div class="row">
+                        <div class="control-group">
+                            <span class="col-xs-3 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="controls">
+                                <div class="col-xs-9">
+                                    <input type="text" class="form-control" 
+                                    placeholder="Full Name" id="name" required
+                                    data-validation-required-message="Please enter your name" />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <span class="col-xs-3 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="controls">
+                                <div class="col-xs-9">
+                                    <input type="email" class="form-control" placeholder="Email" 
+                                    id="email" required
+                                    data-validation-required-message="Please enter your email" />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <span class="col-xs-3 text-center"><i class="fa fa-calendar bigicon"></i></span>
+                            <div class="controls">
+                                <div class="col-xs-9">
+                                    <div class="input-daterange" id="daterangepicker">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Check-in" id="checkin" readonly size="8" class="input-sm" data-date-language="en" data-date-weekstart="0" data-date-format="yyyy-mm-dd" data-date-start-view="month"/>
+                                            <span class="input-group-add-on"> to </span>
+                                            <input class="input-sm" placeholder="Check-out" readonly id="checkout" size="8" type="text" data-date-language="en" data-date-weekstart="0" data-date-format="yyyy-mm-dd" data-date-start-view="month" required data-validation-required-message="Please select check-in and check-out date"/>
+                                        </div>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <span class="col-xs-3 text-center"><i class="fa fa-users bigicon"></i></span>
+                            <div class="controls">
+                                <div class="col-xs-9">
+                                    <input type="number" min="1" max="4" class="form-control" 
+                                        placeholder="Number of Guests" id="numofguests" required
+                                        data-validation-required-message="Please enter the number of guests" />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <!-- <label for="message" class="control-label col-xs-3">Message</label> -->
+                            <span class="col-xs-3 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="controls">
+                                <div class="col-xs-9">
+                                    <textarea rows="10" cols="100" class="form-control" 
+                                    placeholder="Let us know if you need any specific assistance e.g. cook, transport during your stay here" id="message"
+                                    maxlength="999" style="resize:none"></textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="success"> </div>
+                    <!-- For success/fail messages -->
+                    <div class="control-group">
+                        <button type="submit" class="btn btn-primary center-block">Submit</button><br />
+                    </div>
+                </form>
+            </div>
+            <style>
+                .header {
+                color: #36A0FF;
+                font-size: 27px;
+                padding: 10px;
+                }
+                .bigicon {
+                font-size: 35px;
+                color: #36A0FF;
+                }
+                .control-label{
+                    text-align:left !important; 
+                }
+
+            </style>
+            <!-- Contact Form - END -->
+        </div>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+        <script type="text/javascript" src="js/contact_me.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('.input-daterange').datepicker({
+                    startDate: "+1d"
+                });
+            
+            });
+        </script>
+    </body>
+</html>
