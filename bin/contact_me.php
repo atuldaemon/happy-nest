@@ -19,14 +19,14 @@ $checkoutDate = $_POST['checkout'];
 // create email body and send it    
 $to = 'contact@happy-nest.in';
 $email_subject = "Accomodation inquiry";
-$email_body = "You have received a new message. \n\n".
-                  "Here are the details:\n \nName: $name \n".
+$email_body = "New request\n\n".
+                  "Name of the guest: $name \n".
                   "Email: $email_address\n".
                   "Number of guests: $numOfGuests\n".
                   "Checkin Date (mm/dd/yyyy): $checkinDate\n".
                   "Checkout Date (mm/dd/yyyy): $checkoutDate\n".
                   "Message \n $message";
-$headers = "From: me@happy-nest.in\n";
+$headers = "From: contact@happy-nest.in\n";
 $headers .= "Reply-To: $email_address"; 
 mail($to, $email_subject, $email_body, $headers);
 return true;
