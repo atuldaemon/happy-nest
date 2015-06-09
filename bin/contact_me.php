@@ -26,7 +26,7 @@ $email_body = "New request\n\n".
                   "Checkin Date (mm/dd/yyyy): $checkinDate\n".
                   "Checkout Date (mm/dd/yyyy): $checkoutDate\n".
                   "Message \n $message";
-$headers = "From: contact@happy-nest.in\n";
+$headers = "From: me@happy-nest.in\n";
 $headers .= "Reply-To: $email_address"; 
 mail($to, $email_subject, $email_body, $headers);
 return true;
