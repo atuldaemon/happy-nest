@@ -18,7 +18,7 @@ $checkoutDate = $_POST['checkout'];
     
 // create email body and send it    
 $to = 'contact@happy-nest.in';
-$email_subject = "Happy-nest accomodation inquiry";
+$email_subject = "Happy-nest accommodation inquiry";
 $email_body = "New request\n\n".
                   "Name of the guest: $name \n".
                   "Email: $email_address\n".
